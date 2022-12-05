@@ -590,6 +590,26 @@ section p{
     border-bottom:3px solid rgb(0, 115, 255);
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+
+input,select,textarea{
+    padding: 1.4rem;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-transform: lowercase;
+}
+
+textarea{
+    height: 5rem;
+    text-transform: lowercase;
+}
+
 .bt{
     width: 8rem;
     margin-top: 2rem;;
