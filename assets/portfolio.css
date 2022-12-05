@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Dancing+Script:wght@700&family=El+Messiri:wght@400;600&family=Lobster&family=Nerko+One&family=Oleo+Script&family=Poppins:ital,wght@1,400;1,600;1,900&family=Satisfy&display=swap');
+
+:root{
+    --blue:#24ddf9;
+}
+
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline:none;
+    text-transform:capitalize;
+    transition:all .2s linear;
+}
+
+*::Selection{
+    background:var(--blue);
+    color:#333;
+}
+
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+    
+}
+
+html::-webkit-scrollbar-track{
+    background:var(--blue);
+
+}
+
+html::webkit-scrollbar-thumb{
+    background:rgb(255, 240, 242);
+
+}
+
+body{
+    background:#111;
+    overflow-x:hidden;
+}
+
+header{
+    width: 24%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    position : fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1ea; 
+    text-align: center;
+    z-index: 10;
+}
+
+header>.logo{
+    padding-left: 2rem;
+}
+
+
+
+header  .logo{
+    top: 3rem;
+    font-size: 1.5rem;
+    left: 3rem;
+    color: rgb(18, 29, 153);
+    font-weight: 700;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    text-transform: capitalize;
+    /* position:fixed; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: -63px;
+    margin-top: -206px;
+    
+}
+
+
+header  h2{
+    font-family: 'satisfy','dancing script','Clicker Script', 'cursive';
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header h2 span{
+    font-family: 'oleo script';
+}
+
+header .logo h2::before{
+    content: '';
+    position: absolute;
+    width:20px;
+    height: 20px;
+    border-bottom: 5px solid rgb(17, 4, 75);
+    border-right: 5px solid rgb(17, 4, 75);
+    left: 138px;
+    margin-top: 32px;
+}
+
+header .logo h2::after{
+    content: '';
+    position: absolute;
+    width:20px;
+    height: 20px;
+    border-top: 5px solid rgb(17, 4, 75);
+    border-left: 5px solid rgb(17, 4, 75);
+    left: 51px;
+    margin-top: -10px;
+}
+
+.ops{
+    margin-right: 1rem;
+    margin-top: 7rem;
+}
+
+header .navbar{
+    width:100%;
+    top: 5rem;
+    left: 1rem;
+}
+
+header .navbar ul li{
+    margin-bottom: 2rem;
+    display: block;
+}
+
+header .navbar ul li a{
+    width: 24%;
+    height: 1rem;
+    text-decoration: none;
+    font-family: 'El Messiri','Clicker Script', cursive;
+    font-size: 30px;
+    color: rgb(18, 29, 153);
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    padding: 15px ; 
+}
+
+
+header .navbar ul li a:hover{
+    color: rgb(0, 123, 255);
+}
+
+header .navbar ul li a .active{
+    color: rgb(0, 123, 255);
+}
+
+#menu{
+    position: fixed;
+    top:2rem;
+    right:2rem;
+    background:#333;
+    color:#fff;
+    cursor:pointer;
+    font-size:2.5rem;
+    padding:1rem 1.5rem;
+    z-index:1000;
+    display:none;
+}
+#menu:hover{
+    color:#eee;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    flex-flow:column;
+    padding-right: 43rem;
+    padding:0 43rem;
+    padding-right: 3rem;
+}
+
+.home h3{
+    font-size:2.5rem;
+    color:rgb(14, 87, 244);
+    font-family: 'El Messiri';
+}
+
+.home h2{
+    font-size:5rem;
+    color:rgb(29, 28, 28);
+    padding-bottom: 1.5rem;
+}
+
+.home h2 span{
+    font-family: 'lobster';
+    color:rgb(98, 0, 255);
+}
+
+section p{
+    font-size:2rem;
+    color:rgb(20, 20, 20);
+    margin-bottom: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.butn{
+    display: flex;
+    width: 200px;
+    background-color: rgb(18, 29, 153);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    box-shadow: #24ddf9;
+    border: none;
+    padding-top: 2rem;
+}
+
+.butn a{
+    list-style: none;
+    color:rgb(255, 240, 242);
+    padding: 2px;
+    font-size: 1.5rem;
+}
+
+.butn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 123, 255);
+    color:rgb(255, 240, 242);
+    text-decoration: none;
+}
+
+.home-info{
+
+}
+
+.picture{
+    padding-right: 50rem;
+    justify-content: right;
+    text-align: right;
+    
+}
+
+.picture img{
+    align-items: right;
+    justify-content: right;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 5rem;
+    padding-top: 2rem;
+
+}
+
+.about{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:0 45rem;
+}
+
+.about h3 span{
+    font-size:2.5rem;
+    color:rgb(11, 8, 96);
+}
+
+.about h2{
+    font-size:5rem;
+    color:rgb(12, 64, 162);
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.about p{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: 'el messiri';
+    color:rgb(20, 20, 20);
+}
+
+.about h3{
+    font-size: 2rem ;
+    color:rgb(9, 55, 179);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+
+.contact-me{
+    width: 300px;
+    height: 3rem;
+    display: inline;
+}
+
+.social{
+    padding-top: 1rem;
+}
+
+.contact-me .social li{
+    display: inline;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.contact-me .social li i{
+    color:rgb(0, 123, 255);
+    font-size: 2.8rem;
+}
+
+.contact-me .social li i:hover{
+    color: blue;
+    font-size: 3rem;
+} 
+
+
+
+.education {
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:0 45rem;
+}
+
+.education h2{
+    font-size:5rem;
+    color:rgb(48, 17, 126);
+    padding-bottom: 1.5rem;
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.Edu-content{
+    padding-top: 2rem;
+}
+
+.q{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'oleo script';
+    color:rgb(9, 55, 179);
+}
+
+.a{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: 'el messiri';
+    color:rgb(20, 20, 20);
+}
+
+.a a{
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    font-family: 'el messiri';
+    color:rgb(20, 20, 20);
+}
+
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:0 45rem;
+}
+
+.skills h2{
+    font-size:5rem;
+    color:rgb(48, 17, 126);
+    padding-bottom: 1.5rem;
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.wrapper {
+    width: 550px;
+    font-family: 'Roboto', sans-serif;
+    margin:0 auto;
+    }
+    
+.skill {
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x:hidden;
+    }
+    
+.fc{
+    margin-right: 3rem;
+}
+.skill > p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1716;
+    margin: 0;
+    }
+    
+.skill:before {
+    width: 100%;
+    height: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: #959595;
+    bottom: 0;
+    }
+    
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background:#0b2085;
+    display: block;
+    position: relative;
+    }
+    
+.skill-bar span {
+        position: absolute;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+        }
+    
+.skill-bar {
+    position: relative;
+    }
+    
+.skill1 .skill-count1 {
+    right: 0;
+    }
+    
+.skill1 {
+    width: 95%;
+    }
+    
+.skill2 {
+    width: 95%;
+    }
+    
+.skill2 .skill-count2 {
+    right: 0;
+    }
+    
+.skill3{
+    width: 75%;
+    }
+    
+.skill3 .skill-count3 {
+    right: 0;
+    }
+
+.skill4{
+    width: 65%;
+}
+
+.skill4 .skill-count4{
+    right: 0;
+}
+
+.skill5{
+    width: 50%;
+}
+
+.skill5 .skill-count5{
+    right: 0;
+}
+
+.skill6{
+    width: 80%;
+}
+
+.skill6 .skill-count6{
+    right: 0;
+}
+
+.skill7{
+    width: 40%;
+}
+
+.skill7 .skill-count7{
+    right: 0;
+}
+
+.skill8{
+    width: 90%;
+}
+
+.skill8 .skill-count8{
+    right: 0;
+}
+
+.skill9{
+    width: 40%;
+}
+
+.skill9 .skill-count9{
+    right: 0;
+}
+
+.skill10{
+    width: 90%;
+}
+
+.skill10 .skill-count10{
+    right: 0;
+}
+
+.certification{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:0 45rem;
+}
+
+.certification h2{
+    font-size:5rem;
+    color:rgb(48, 17, 126);
+    padding-bottom: 1.5rem;
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.certification .row{
+    padding-top: 2rem;
+}
+
+
+
+.imag{
+    position: relative;
+    min-width: auto;
+    width: auto;
+    height: 180px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+.imag:hover{
+    transform: scale(1.1);
+}
+
+.imag:hover .imgwrite{
+    opacity: 1;
+}
+
+.imgwrite{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.imgwrite p{
+    color: #fff;
+    font-family: 'poppins';
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+
+.feedback{
+    display:flex;
+    justify-content: center;
+    flex-flow:column;
+    padding:0 45rem;
+}
+
+.feedback h2{
+    font-size:5rem;
+    color:rgb(48, 17, 126);
+    padding-bottom: 1.5rem;
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.bt{
+    width: 8rem;
+    margin-top: 2rem;;
+}
+
+.bt button{
+    padding: 1rem;
+    color :#eee;
+    background-color: #0b2085;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.bt button:hover{
+    background-color: #24ddf9;
+}
+
+
+.top{
+    position:fixed;
+    bottom:2rem;
+    right:2rem;
+    z-index: 100;
+
+}
+
+footer{
+    background-color: #0b2085;
+    color: #fff;
+    
+    height: 8rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 45rem;
+    bottom: 0;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
