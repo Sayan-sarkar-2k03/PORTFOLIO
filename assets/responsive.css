@@ -100,6 +100,9 @@
         text-transform: capitalize;
         margin-top: 60%;
     }
+    
+    .projects{
+        padding:0 19rem;
 
     .feedback{
         padding: 0 19rem;
@@ -188,6 +191,9 @@
         text-transform: capitalize;
         margin-top: 60%;
     }
+     
+     .projects{
+         padding: 0 1rem;
 
     .feedback{
         padding: 0 1rem;
