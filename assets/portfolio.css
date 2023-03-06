@@ -576,6 +576,31 @@ section p{
     margin-top: 60%;
 }
 
+.projects{
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    padding:0 14rem 45rem 45rem;
+}
+
+.projects h2{
+    font-size:5rem;
+    color:rgb(48, 17, 126);
+    padding-bottom: 1.5rem;
+    border-bottom:3px solid rgb(0, 115, 255);
+}
+
+.projects img{
+    position: relative;
+    min-width: auto;
+    width: 221px;
+    height: 211px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: 0.5s;
+    margin-bottom: 22px;
+}
+
 .feedback{
     display:flex;
     justify-content: center;
