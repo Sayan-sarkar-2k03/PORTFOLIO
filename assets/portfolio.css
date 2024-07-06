@@ -195,9 +195,17 @@ section{
 }
 
 .home h2{
-    font-size:5rem;
+    font-size:3rem;
     color:rgb(29, 28, 28);
     padding-bottom: 1.5rem;
+}
+
+.home-info .wrapper{
+    margin : 0 0 0 0 ;
+}
+
+.home-info .wrapper .auto-type{
+    font-size: 3rem;
 }
 
 .home h2 span{
